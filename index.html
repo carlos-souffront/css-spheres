@@ -1,0 +1,64 @@
+<body>  
+<style>
+  
+  :root {
+    --bg-color: #fff09b;
+    --border-color: #003459;   
+  }
+  
+  body{
+    height: 100vh;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sphere {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: var(--border-color);
+    border: 3px solid var(--border-color);
+    border-radius: 50%;
+    background-color: #f77778;
+  }
+  
+  .sphere::before {
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: 25px;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    border: 8px solid rgba(255, 255, 255, 0.5);
+    border-top-left-radius: 50px;
+    border-bottom: 0px;
+    border-right: 0px;
+  }
+  
+  
+  .sphere::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 7.3px;
+    width: 184px;
+    height: 184px;
+    border-radius: 50%;
+    background-color: #faa7a8;
+  }
+  
+  
+</style>
+
+<div class="sphere"></div>
+  
+  
+  
+  
+  
+</body>
